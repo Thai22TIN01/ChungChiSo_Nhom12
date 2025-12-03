@@ -1,0 +1,114 @@
+/* ------------------------------
+   FONT & RESET
+--------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7fa, #e2e8f0);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------
+   MAIN CONTAINER
+--------------------------------*/
+.container {
+  width: 420px;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 25px;
+}
+
+/* ------------------------------
+   BUTTON STYLE
+--------------------------------*/
+button {
+  background: linear-gradient(135deg, #ff7b00, #ff9500);
+  border: none;
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 18px;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(255, 136, 0, 0.4);
+}
+
+/* ------------------------------
+   ACCOUNT BOX
+--------------------------------*/
+#accountBox {
+  margin-top: 25px;
+  padding: 15px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #2d3748;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+  animation: fadeIn 0.4s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ------------------------------
+   INPUT STYLE (nếu bạn thêm form sau này)
+--------------------------------*/
+input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+input:focus {
+  border-color: #ff9500;
+  box-shadow: 0 0 8px rgba(255, 149, 0, 0.3);
+}
+
+/* ------------------------------
+   RESPONSIVE
+--------------------------------*/
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 25px;
+  }
+}
